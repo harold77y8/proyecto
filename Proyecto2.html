@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<link href="css/proyecto2.css" rel="stylesheet" type="text/css" />
+<script src="js/proyecto.js"> </script>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="sidebar1"><a href="Proyecto.html">PRESENTACION</a><!-- end .sidebar1 --></div>
+  <div class="content">
+    <form id="form1" name="form1" method="post" action="">
+      <table width="600" height="279">
+        <tr>
+          <td width="293"><label for="tEquipo">TIPO DE EQUIPO:</label></td>
+          <td width="291"> RECARGAS DE: </td>
+        </tr>
+        <tr>
+          <td><label for="equipo"></label>
+            <select name="equipo" id="equipo">
+              <option value="0">...</option>
+              <option value="1">Huawei P30 Pro</option>
+              <option value="2">Samsumg Galaxi S10</option>
+              <option value="3">Motorola E6 Plus</option>
+          </select></td>
+          <td><p>
+            <label for="recargas"></label>
+            <label for="tPrecio"></label>
+          $10, $20, 430, $40, $50, $100, $150, $200, $500 Y $1000</p><label for="recargas"></label></td>
+        </tr>
+        <tr>
+          <td>ACCESORIOS:</td>
+          <td>RECARGAS:</td>
+        </tr>
+        <tr>
+          <td><label for="accesorio"></label>
+            <select name="accesorio" id="accesorio">
+              <option value="0">...</option>
+              <option value="1">Funda Magnetica Huawei  </option>
+              <option value="2">Audifonos Manos Libres Huawei</option>
+              <option value="3">Soporte de Celular para Auto </option>
+          </select></td>
+          <td><label for="tRecarga"></label>
+          <input type="text" name="tRecarga" id="tRecarga" /></td>
+        </tr>
+        <tr>
+          <td height="55">FORMAS DE PAGO: </td>
+          <td height="55"><input type="button" name="button" id="button" value="Procesar" onclick="calcular()" /></td>
+        </tr>
+        <tr>
+          <td height="55"><label for="pago"></label>
+            <select name="pago" id="pago">
+              <option value="0">...</option>
+              <option value="1">Contado(Efectivo)</option>
+              <option value="2">Contado(Tarjeta de debito)</option>
+              <option value="3">Tarjeta de credito(A 18 meses)</option>
+          </select></td>
+          <td height="55"> <input type="reset" name="reset" id="reset" value="Limpiar" /></td>
+        </tr>
+        <tr>
+          <td height="55" colspan="2"><label for="tResumen"></label>
+          <textarea name="tResumen" id="tResumen" cols="45" rows="15"></textarea></td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      <p><!-- end .content --> NOTA DE LAS DIFERENTES FORMAS DE PAGO: </p>
+      <p>1. Contado ( Efectivo) (Suma de equipo + accesorios - 3% de descuento) + Recarga</p>
+      <p>2. Contado ( Tarjeta de debito) Suma de equipo + accesorios + Recarga</p>
+      <p>3. Tarjeta de Credito ( A 18 meses ) (Suma de equipo + accesorios + 3% ) + Recarga</p>
+    </form>
+  </div>
+  <!-- end .container --></div>
+</body>
+</html>
